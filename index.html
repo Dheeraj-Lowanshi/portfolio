@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+  </head>
+  <body>
+    <div class="scroll-up">
+      <i class="fa-solid fa-arrow-up" id="scrollUp"></i>
+    </div>
+    <!-- Navbar start -->
+    <nav id="desktop-nav">
+      <div class="logo">Dheeraj Lowanshi</div>
+      <div>
+        <ul class="nav-link">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project">project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Dheeraj Lowanshi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="togglemenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-link">
+          <li><a href="#about " onclick="togglemenu()">About</a></li>
+          <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+          <li><a href="#project" onclick="togglemenu()">project</a></li>
+          <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Section 1 start -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assets/circular profile.png" alt=" profile picture" />
+      </div>
+      <div class="section__text hiddenY">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Dheeraj Lowanshi</h1>
+        <span class="auto-text" id="auto-typed"></span>
+        <!-- <p class="section__text__p2">Frontend Developer</p> -->
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="assets/linkdin.jpg"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/dheeraj-lowanshi/'"
+          />
+          <img
+            src="assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='//github.com/Dheeraj-Lowanshi'"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Section 1 end -->
+    <!-- Section 2 start -->
+    <section class="about" id="about">
+      <p id="about-para" class="hiddenY">Get To Know More</p>
+      <h2 id="about-title" class="hiddenY">About Me</h2>
+
+      <div class="about-main">
+        <div class="about-img hiddenY">
+          <img src="assets/about-img.jpg" id="about-image" alt="about-image" />
+        </div>
+        <div class="about__div-section">
+          <div class="about-text hiddenY">
+            <div class="about-experience">
+              <i class="fa-solid fa-medal" id="about-tab"></i>
+              <p id="about-div-title">Experience</p>
+              <h6>Fresher</h6>
+              <h6>Full Stack Developer</h6>
+            </div>
+            <div class="about-education">
+              <i class="fa-solid fa-user-group" id="about-tab"></i>
+              <p id="about-div-title">Education</p>
+              <h6>B.Tech Information Technology</h6>
+            </div>
+          </div>
+
+          <p id="para" class="hiddenY">
+            Hi! I'm Dheeraj Lowanshi, a
+            <span class="mail">full stack web developer</span>. I doing my
+            bachelor of technology from oriental institute of science and
+            technology bhopal and my specialization
+            <span class="insta">information technology</span>.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Section 2 end -->
+    <!-- Section 3 start -->
+    <section class="skill" id="experience">
+      <p id="about-para" class="hiddenY">Explore My</p>
+      <h2 id="about-title" class="hiddenY">Skills</h2>
+      <div class="lang">
+        <div class="frontend hiddenY">
+          <h5 id="lang-title">Frontend</h5>
+          <div class="lang-1">
+            <article>
+              <img src="assets/html.png" alt="" id="lang-img" />
+              <h4>HTML</h4>
+            </article>
+            <article>
+              <img src="assets/css.jpeg" alt="" id="lang-img" />
+              <h4>CSS</h4>
+            </article>
+          </div>
+          <div class="lang-1">
+            <article>
+              <img src="assets/bootstrap.png" alt="" id="lang-img" />
+              <h4>Bootstrap</h4>
+            </article>
+            <article>
+              <img src="assets/js.webp" alt="" id="lang-img" />
+              <h4>Javascript</h4>
+            </article>
+          </div>
+          <div class="lang-1">
+            <!-- <article>
+              <img src="assets/react.webp" alt="" id="lang-img" />
+              <h4>Reactjs</h4>
+            </article> -->
+          </div>
+        </div>
+        <div class="backend hiddenY">
+          <h5 id="lang-title">Programming Language</h5>
+          <div class="lang-1">
+            <article>
+              <img src="assets/C++.png" alt="" id="lang-img" />
+              <h4>C++</h4>
+            </article>
+            <article>
+              <img src="assets/java.webp" alt="" id="lang-img" />
+              <h4>Java</h4>
+            </article>
+          </div>
+          <div class="lang-1">
+            <article>
+              <img src="assets/sql.png" alt="" id="lang-img" />
+              <h3>SQL</h3>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 3 end -->
+
+    <!-- project section start -->
+    <section class="project" id="project">
+      <p id="about-para" class="hiddenY">Browse My Recent</p>
+      <h2 id="about-title" class="hiddenY">Projects</h2>
+      <div class="project-main">
+        <div class="project-div hiddenY">
+          <img src="assets/amazon.jpg" id="project-img" alt="" />
+          <h4>Project One</h4>
+          <a href="//github.com/Dheeraj-Lowanshi" class="btn btn-secondary">GitHub</a>
+          <a href="" class="btn btn-dark">Live Demo</a>
+        </div>
+        <div class="project-div hiddenY">
+          <img src="assets/netflix.png" id="project-img" alt="" />
+          <h4>Project Two</h4>
+          <a href="//github.com/Dheeraj-Lowanshi" class="btn btn-secondary">GitHub</a>
+          <a href="" class="btn btn-dark">Live Demo</a>
+        </div>
+        <div class="project-div hiddenY">
+          <img src="assets/watch.jpg" id="project-img" alt="" />
+          <h4>Project Three</h4>
+          <a href="//github.com/Dheeraj-Lowanshi" class="btn btn-secondary">GitHub</a>
+          <a href="https://dheeraj-lowanshi.github.io/JS-watch-/" class="btn btn-dark">Live Demo</a>
+        </div>
+      </div>
+    </section>
+    <!-- project section end -->
+    <!-- contact section start -->
+    <footer>
+      <div id="contact">
+        <h4 class="hiddenY">
+          You can get in touch with me via
+          <a href="mailto:dheerajlowanshi04@gmail.com"
+            ><span class="social mail">mail</span></a
+          >
+          or
+          <a href="https://www.instagram.com/dheerajlowanshi_"
+            ><span class="social insta">instagram</span></a
+          >
+          or
+          <a href="https://www.linkedin.com/in/dheeraj-lowanshi/ "
+            ><span class="social linkdin">linkdin</span></a
+          >
+        </h4>
+      </div>
+      <div>
+        <ul class="bottom-link">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project">project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- contact section end -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

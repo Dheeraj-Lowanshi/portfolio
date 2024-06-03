@@ -1,0 +1,85 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 103vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+}
+@media screen and(max-width:600px) {
+  .about-img {
+    width: auto;
+    height: 46vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    margin: 0 5%;
+  }
+  .about-main {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .about-img {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .para {
+    flex: 1;
+  }
+  .lang-1 {
+    flex-direction: column;
+  }
+  .lang-1 article {
+    display: flex;
+    justify-content: center;
+  }
+  .project-main {
+    flex-wrap: wrap;
+  }
+  #project-img {
+    height: 23vw;
+  }
+}
